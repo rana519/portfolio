@@ -50,24 +50,9 @@
     class="fixed top-0 left-0 h-full w-60 bg-white dark:bg-black shadow-lg flex flex-col justify-start items-center p-5 z-50">
     
     <div class="mb-10">
-      <a href="index.html" class="text-3xl font-signika font-bold">RANA</a>
+      <a href="index.html" class="text-5xl font-signika font-bold">RANA</a>
     </div>
 
-    <button onclick="menuToggle()" @click="open = !open"
-      class="tap-highlight-transparent text-black dark:text-white w-8 h-8 relative focus:outline-none mb-10 md:hidden">
-      <span class="sr-only">Open main menu</span>
-      <div class="block w-8 h-8 relative">
-        <span aria-hidden="true" class="block absolute h-0.5 w-8 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open, '-translate-y-2': !open}"></span>
-        <span aria-hidden="true" class="block absolute h-0.5 w-8 bg-current transform transition duration-500 ease-in-out" :class="{'opacity-0': open}"></span>
-        <span aria-hidden="true" class="block absolute h-0.5 w-8 bg-current transform transition duration-500 ease-in-out" :class="{'-rotate-45': open, 'translate-y-2': !open}"></span>
-      </div>
-    </button>
-
-    <ul id="ulMenu" class="flex flex-col space-y-6 mt-10 text-center">
-      <li class="group transition duration-300">
-        <a href="index.html" class="font-signika text-2xl tap-highlight-transparent no-underline  <nav id="nav" x-data="{ open: false }" role="navigation"
-    class="fixed top-0 left-0 h-full w-60 bg-white dark:bg-black shadow-lg flex flex-col justify-start items-center p-5 z-50">
-    
     <button onclick="menuToggle()" @click="open = !open"
       class="tap-highlight-transparent text-black dark:text-white w-8 h-8 relative focus:outline-none mb-10 md:hidden">
       <span class="sr-only">Open main menu</span>
