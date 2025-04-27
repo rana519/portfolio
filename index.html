@@ -46,10 +46,7 @@
 <body
   class="dark:bg-black bg-white h-screen text-black dark:text-white px-5 md:px-20 opacity-0 animate-fade-in transition duration-500">
   <!-- Navbar -->
-
-  <body class="dark:bg-black bg-white h-screen text-black dark:text-white overflow-x-hidden">
-  <!-- Sidebar Menu -->
-    <nav id="sidebar" x-data="{ open: false }" :class="open ? 'translate-x-0' : '-translate-x-full'"
+  <nav id="sidebar" x-data="{ open: false }" :class="open ? 'translate-x-0' : '-translate-x-full'"
     class="fixed top-0 left-0 w-60 h-full bg-white dark:bg-black shadow-lg flex flex-col items-center p-5 transform transition-transform duration-300 z-50">
     
     <button @click="open = false"
@@ -77,18 +74,6 @@
       </li>
     </ul>
   </nav>
-
-  <!-- Main Content -->
-  <div class="px-5 md:px-20 pt-20">
-    <header class="pb-1">
-      <!-- Page-specific header or hero -->
-      <h1 class="text-4xl font-bold">Welcome to My Website!</h1>
-      <p class="mt-4">Main content goes here...</p>
-    </header>
-  </div>
-
-
-
   <!-- Main Content -->
   <div class="pt-10 pr-60"> <!-- Padding-right to make space for the sidebar -->
     <header class="pt-10 pb-1">
