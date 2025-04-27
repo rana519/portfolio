@@ -48,15 +48,19 @@
   <!-- Navbar -->
   <nav id="sidebar" x-data="{ open: false }" :class="open ? 'translate-x-0' : '-translate-x-full'"
     class="fixed top-0 left-0 w-60 h-full bg-white dark:bg-black shadow-lg flex flex-col items-center p-5 transform transition-transform duration-300 z-50">
-    
-    <button @click="open = false"
-      class="self-end mb-10 text-black dark:text-white focus:outline-none">
-      ✖
+   <div class="mb-10">
+      <a href="index.html" class="text-2xl font-signika font-bold">RANA</a>
+    </div>
+    <button onclick="menuToggle()" @click="open = !open"
+      class="tap-highlight-transparent text-black dark:text-white w-8 h-8 relative focus:outline-none mb-10 md:hidden">
+      <span class="sr-only">Open main menu</span>
+      <div class="block w-8 h-8 relative">
+        <span aria-hidden="true" class="block absolute h-0.5 w-8 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open, '-translate-y-2': !open}"></span>
+        <span aria-hidden="true" class="block absolute h-0.5 w-8 bg-current transform transition duration-500 ease-in-out" :class="{'opacity-0': open}"></span>
+        <span aria-hidden="true" class="block absolute h-0.5 w-8 bg-current transform transition duration-500 ease-in-out" :class="{'-rotate-45': open, 'translate-y-2': !open}"></span>
+      </div>
     </button>
-
-    <a href="index.html" class="text-2xl font-signika font-bold mb-10">RANA</a>
-
-    <ul class="flex flex-col space-y-6 text-center">
+    <ul id="ulMenu" class="flex flex-col space-y-6 text-center">
       <li class="group transition duration-300">
         <a href="index.html" class="font-signika text-2xl tap-highlight-transparent">PORTFOLIO
           <span class="block h-0.5 bg-black dark:bg-white mt-1"></span>
